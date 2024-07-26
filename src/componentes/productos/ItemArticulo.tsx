@@ -3,7 +3,7 @@ import Articulo from '../../entidades/Articulo';
 import AddRemove from '../addRemove/AddRemove';
 import { useState } from 'react';
 import Promocion from '../../entidades/Promocion';
-
+import "./itemArticulo.css";
 type ArticuloProps = {
   articulo: Articulo;
   onClick: () => void;
@@ -39,8 +39,8 @@ const ItemArticulo = ({ articulo, onClick }: ArticuloProps) => {
             <h6 className='fw-bold my-0 '>${(articulo.precioVenta ?? (articulo as Promocion).precioPromocional).toLocaleString('es-AR')}</h6>
             
           </div>
-          <div className=''>
-            <AddRemove articulo={articulo} small/>
+          <div className='' >
+            <AddRemove   articulo={articulo} small/>
           </div>
         </div>
       </CardBody>

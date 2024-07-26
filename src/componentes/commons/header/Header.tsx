@@ -38,8 +38,8 @@ const Header = () => {
           className="sm:hidden"
         />
         <NavbarBrand className='align-baseline'>
-          <div className='me-1' style={{ height: "20px", width: "20px" }}>
-            <img src='/buen-sabor.svg' alt='Logo' />
+          <div className='me-1' style={{ height: "15%", width: "150px" }}>
+            <img src='/buenSabor.png' alt='Logo' />
           </div>
           <a className="text-decoration-none" href='#' onClick={() => navigate(`/home`, { state: { sucursalSeleccionada }, relative: 'path' })}>
             <p className="font-bold text-inherit my-auto">
