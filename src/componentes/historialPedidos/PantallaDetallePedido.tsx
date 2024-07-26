@@ -17,6 +17,7 @@ import LoaderPage from '../loaderPage/LoaderPage';
 import { useSucursales } from '../../context/SucursalesContext';
 import { useEmpresas } from '../../context/EmpresasContext';
 import { TipoEnvio } from '../../entidades/enums/TipoEnvio';
+import './HistorialPedidos.css'; // Import the CSS file
 
 function PantallaDetallePedido() {
     const navigate = useNavigate();
@@ -64,7 +65,7 @@ function PantallaDetallePedido() {
         <>
         <Header />
         { pedido 
-          ? (<div className='m-4 card p-4 bg-light'>
+          ? (<div className='m-4 card p-4 bg-light  '>
               <div className='row justify-content-between'>
                 
                 <div className='col-12 d-flex border-bottom justify-content-center'>
@@ -82,8 +83,8 @@ function PantallaDetallePedido() {
                     <h6 className='col-6'>Domicilio: {pedido.domicilio.calle} {pedido.domicilio.numero}, {pedido.domicilio.localidad.nombre}</h6>
                   }
                 </div>
-                <div className="ms-2 mt-auto col d-grid text-decoration-none">
-                    <Button onClick={() => navigate('../pedidos', { state: { sucursalSeleccionada } })}>Volver</Button>
+                <div className="btn-success ms-2 mt-auto col d-grid text-decoration-none">
+                    <Button className="btn btn-success" onClick={() => navigate('../pedidos', { state: { sucursalSeleccionada } })}>Volver</Button>
                 </div>
               </div>
               <br/>
