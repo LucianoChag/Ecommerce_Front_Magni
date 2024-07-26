@@ -4,3 +4,11 @@
 .detalle-ingredientes {
     max-height: fit-content;
 }
+
+.modal-container {
+    background-color: #e0ebc2;
+}
+
+.bg-custom-detalle {
+    background-color: #b9d162 ;
+}

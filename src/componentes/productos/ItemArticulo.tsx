@@ -13,7 +13,7 @@ const ItemArticulo = ({ articulo, onClick }: ArticuloProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
-    <Card className='h-100'>
+    <Card className='h-100 bg-custom'>
       <CardBody>
         <button onClick={onClick} style={{ position: 'relative', display: 'block', height: '200px' }}>
           {!imageLoaded && (

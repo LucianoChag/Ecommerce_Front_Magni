@@ -2,8 +2,17 @@
     min-width: 48%;
     min-height: 48%;
     margin: .5rem;
+    background-color: #b9d162 ;
   }
 
 .categoria-card.selected {
     width: 100%;
   }
+
+  .bg-custom {
+    background-color: #ccdd91;
+}
+
+.bg-custom-categories {
+  background-color: #5bbec0;
+}

@@ -1,12 +1,51 @@
+/* header.css */
+
 .custom-avatar img {
   opacity: 1 !important;
 }
 
 .sin-link.selected {
-  background-color: rgba(23, 115, 235, 0.363);
+  background-color: rgba(91, 190, 192, 0.363); /* Adaptado a la nueva paleta de colores (5bbec0) */
   color: rgb(24, 24, 119) !important;
 }
 
 .sin-link.selected > div > .text-tiny, .sin-link.selected > div > .text-tiny:hover {
   color: rgba(24, 24, 119, 0.8) !important;
+}
+
+/* Nuevos estilos */
+.navbar-custom {
+  background-color: #a6c732; /* Verde lima */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-item,
+.navbar-custom .dropdown-item,
+.navbar-custom .button,
+.navbar-custom a {
+  color: #ffffff; /* Blanco */
+}
+
+.navbar-custom .login-button,
+.navbar-custom .signup-button {
+  color: #a6c732; /* Verde lima */
+  border: 1px solid #ffffff; /* Borde blanco */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.navbar-custom .signup-button {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #a6c732; /* Texto verde lima */
+}
+
+/* Estilos para horarios de sucursal */
+.dropdown .button {
+  color: #ffffff; /* Blanco para horarios */
+}
+
+/* Estilo para botón de iniciar sesión */
+.login-button {
+  color: #ffffff !important;
+  background-color: transparent !important;
+  border: none !important;
 }

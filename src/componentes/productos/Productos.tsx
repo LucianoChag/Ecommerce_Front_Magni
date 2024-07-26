@@ -75,7 +75,7 @@ const Productos = () => {
       {categorias.map(categoria => (
           <div key={categoria.id} className='col'>
             <a href={"#categoria-" + categoria.id} className='text-decoration-none w-100'>
-              <Card className={`w-100 mt-2`}>
+              <Card className={`w-100 mt-2 bg-custom-categories`}>
                 <CardHeader className={`justify-content-center`}>
                   <h4 className="text-nowrap text-center">{categoria.denominacion}</h4>
                 </CardHeader>
@@ -85,7 +85,7 @@ const Productos = () => {
         ))}
         {(promociones.length > 0) && <div className='col'>
           <a href={"#categoria-promociones"} className='text-decoration-none w-100'>
-            <Card className='w-100 mt-2'>
+            <Card className='w-100 mt-2 bg-custom-categories'>
               <CardHeader className='justify-content-center'>
                 <h4 className={'text-nowrap text-center'}>Promociones</h4>
               </CardHeader>

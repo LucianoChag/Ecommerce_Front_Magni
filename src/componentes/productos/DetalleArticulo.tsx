@@ -14,7 +14,7 @@ type DetalleArticuloProps = {
 const DetalleArticulo = ({ articulo, onClose }: DetalleArticuloProps) => {
   return (
     <Modal isOpen={true} onClose={onClose} size={"4xl"}>
-        <ModalContent>
+        <ModalContent className="modal-container">
           <ModalHeader>
             <h5 className="modal-title">Detalle de {articulo.denominacion}</h5>
           </ModalHeader>
@@ -25,7 +25,7 @@ const DetalleArticulo = ({ articulo, onClose }: DetalleArticuloProps) => {
                 <div className='p-2'>
                     <CCarousel controls indicators interval={articulo.imagenes.length > 1}>
                     {articulo.imagenes.map(imagen => 
-                        <CCarouselItem key={imagen.id} className="rounded p-5 dark">
+                        <CCarouselItem key={imagen.id} className="rounded p-5 bg-custom-detalle">
                             <div className="carousel-md">
                                 <img className="rounded h-100 mx-auto" src={imagen.url} alt={imagen.url} />
                             </div>
