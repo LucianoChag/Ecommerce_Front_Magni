@@ -107,10 +107,10 @@ const Profile = ({ editar = false }) => {
         <div className="w-100 d-flex justify-content-center mt-5"><CircularProgress /></div>
         :
         (cliente && (
-          <div className="bg-gris d-flex justify-content-center">
-            <div className="mt-1 col-6">
+          <div className="container-bg-custom d-flex justify-content-center">
+            <div className="container-custom">
               <br></br>
-              <div className="border rounded bg-white p-3">
+              <div className="">
                 <h4 className="mb-2 text-lg">Perfil</h4>
                 <div className="row">
                   <div className="col-12 col-xl-7">
@@ -239,8 +239,8 @@ const Profile = ({ editar = false }) => {
                   </div>
                 </div>
               </div>
-              <div className="border rounded bg-white p-3 my-2">
-                <h4 className="mb-2 text-lg">Domicilio</h4>
+              <div className=" my-2">
+                <h4 className="mb-2 text-lg">Domicilios</h4>
                 {isEditing ? (
                   <Domicilios domicilios={clienteNuevo.domicilios} handleChangeDomicilios={handleChangeDomicilios} editar />
                 ) : (
@@ -259,7 +259,7 @@ const Profile = ({ editar = false }) => {
                     </Button>
                     <Popover showArrow offset={10} placement="top" backdrop={"opaque"} isOpen={error !== ""} color="danger"  onClose={() => setError("")}>
                       <PopoverTrigger>
-                      <Button variant="solid" color="primary" className="col-3" onClick={handleSubmit}>
+                      <Button variant="solid" color="success" className="col-3" onClick={handleSubmit}>
                         Guardar
                       </Button>
                       </PopoverTrigger>
@@ -267,7 +267,7 @@ const Profile = ({ editar = false }) => {
                     </Popover>
                   </>
                 ) : (
-                  <Button variant="solid" color="secondary" className="col-6 col-md-4 col-lg-3" onClick={() => setIsEditing(true)}>
+                  <Button variant="solid" color="success" className="col-6 col-md-4 col-lg-3" onClick={() => setIsEditing(true)}>
                     Modificar Datos
                   </Button>
                 )}

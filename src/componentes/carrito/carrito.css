@@ -10,6 +10,8 @@
   .carrito-contenedor {
     overflow: hidden;
     transition: all 0.6s ease-in-out;
+    background-color: #e0ebc2 ;
+    
   }
   
   .carrito-contenedor.open {
@@ -18,9 +20,15 @@
   
   .carrito-contenedor.closed {
     max-height: 0;
+    
   }
   
   .carrito-producto {
     width: 40%;
     margin-right: 16px;
+
+  }
+
+  .bg-custom-carrito{
+    background-color: #5bbec0;
   }

@@ -32,17 +32,14 @@ const ItemArticulo = ({ articulo, onClick }: ArticuloProps) => {
         </button>
         
         <h6 className='my-0 me-1'>{articulo.denominacion}</h6>
-        <div className='d-flex flex-wrap justify-content-between'>
+        <div className='d-flex flex-wrap justify-content-between bg'>
           <div className='align-items-center d-flex justify-content-center' style={{maxWidth:'80%'
           }}>
             
-            <h6 className='fw-bold my-0'>${(articulo.precioVenta ?? (articulo as Promocion).precioPromocional).toLocaleString('es-AR')}</h6>
-            {/* <div className='d-flex mt-0'>
-            <p className='fw-light'><s>${articulo.precioVenta.toLocaleString('es-AR')}</s></p>
-            <p className='ms-2 px-1 bg-descuento'>15%</p>
-            </div> */}
+            <h6 className='fw-bold my-0 '>${(articulo.precioVenta ?? (articulo as Promocion).precioPromocional).toLocaleString('es-AR')}</h6>
+            
           </div>
-          <div className='ms-auto py-2'>
+          <div className=''>
             <AddRemove articulo={articulo} small/>
           </div>
         </div>

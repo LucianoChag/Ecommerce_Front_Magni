@@ -1,7 +1,41 @@
-.btn-add-single {
-    width: 2.5rem;
-    height: 2.5rem;
+.btn-add {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.btn-add-small {
+    width: 40px;
+    font-size: 1.5rem;
+    height: 40px;
+}
+
+.btn-add-big {
+    width: max-content;
+    height: 40px;
+}
+
+.add-counter {
+    width: auto;
+    height: 100%;
+}
+
+.sin-stock {
+    width: 6rem;
+}
+
+/* New styles for the success buttons */
+.btn-success {
+    background-color: #08a30d !important; /* Stronger green */
+    border-color: #4CAF50 !important; /* Matching border color */
+}
+
+.btn-success:hover {
+    background-color: #a6c732 !important; /* Lighter green on hover */
+    border-color: #a6c732 !important; /* Matching border color on hover */
+}
+
 .btn-add-container {
     width: 7rem;
     padding: .2rem;
@@ -10,25 +44,8 @@
     background-color: rgb(46, 46, 46);
     border-radius: 8px;
 }
-.btn-add {
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn-add-small {
-    width: 40px;
-    font-size: 1.5rem;
-    height: 40px;
-}
-.btn-add-big {
-    width: max-content;
-    height: 40px;
-}
-.add-counter {
-    width: auto;
-    height: 100%;
-}
-.sin-stock {
-    width: 6rem;
+
+.btn-add-single {
+    width: 2.5rem;
+    height: 2.5rem;
 }

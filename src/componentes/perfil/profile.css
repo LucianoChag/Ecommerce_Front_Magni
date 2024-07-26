@@ -30,3 +30,18 @@ button:disabled {
     background-color: rgba(102, 107, 119, 0.7) !important;
     color: rgba(193, 190, 190, 0.6) !important;
 }
+
+/* New styles for wider containers and background color */
+.container-custom {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #e0ebc2;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.container-bg-custom {
+    background-color: #DDDDDD;
+    
+}

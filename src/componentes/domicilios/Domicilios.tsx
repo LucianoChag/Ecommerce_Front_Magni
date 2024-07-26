@@ -59,7 +59,7 @@ function Domicilios({ domicilios, editar = false, crear = editar, seleccionar = 
                         <Button color="danger" onClick={onClose}>
                             Cerrar
                         </Button>
-                        <Button color="primary" onClick={handleDomicilioUpdate}>
+                        <Button color="success" onClick={handleDomicilioUpdate}>
                             Enviar
                         </Button>
                     </ModalFooter>
@@ -85,7 +85,7 @@ function Domicilios({ domicilios, editar = false, crear = editar, seleccionar = 
 
             {crear &&
                 <div className="row mx-1 mt-3">
-                    <Button size="sm" color="secondary" onClick={() => handleShow({id:0, calle:'', numero:0, cp:0, localidad: {id:0, nombre:'', provincia:{id:0, nombre:'', pais: {id: 0, nombre: ''}}}})}>
+                    <Button size="sm" color="primary" onClick={() => handleShow({id:0, calle:'', numero:0, cp:0, localidad: {id:0, nombre:'', provincia:{id:0, nombre:'', pais: {id: 0, nombre: ''}}}})}>
                         Nuevo
                     </Button>
                 </div>

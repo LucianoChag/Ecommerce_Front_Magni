@@ -17,7 +17,7 @@ import Promocion from '../../entidades/Promocion';
 const CartItem = ({ item }: { item: DetallePedido }) => {
   const imagenUrl = item.articulo.imagenes.length > 0 ? item.articulo.imagenes[0].url : 'https://static.vecteezy.com/system/resources/previews/005/007/528/non_2x/restaurant-food-kitchen-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg';
   return (
-    <div className='d-flex justify-content-end mb-2'>
+    <div className='d-flex justify-content-end mb-2 '>
       <div className='carrito-producto'>
         <img src={`${imagenUrl}`} alt={imagenUrl} />
       </div>
@@ -69,11 +69,11 @@ const Carrito = () => {
     (<div className='carrito'>
       {cart.length > 0 && (
         <Card>
-          <CardHeader className='bg-light d-flex justify-content-between align-items-center'>
+          <CardHeader className='bg-light d-flex justify-content-between align-items-center bg-custom-carrito'>
             <div>
               Carrito de compras
             </div>
-            <Button color="primary" onClick={() => setIsOpen(!isOpen)}>
+            <Button color="secondary" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? 'Minimizar Carrito' : 'Abrir Carrito'}
             </Button>
           </CardHeader>
