@@ -83,8 +83,8 @@ function PantallaDetallePedido() {
                     <h6 className='col-6'>Domicilio: {pedido.domicilio.calle} {pedido.domicilio.numero}, {pedido.domicilio.localidad.nombre}</h6>
                   }
                 </div>
-                <div className="btn-success ms-2 mt-auto col d-grid text-decoration-none">
-                    <Button className="btn btn-success" onClick={() => navigate('../pedidos', { state: { sucursalSeleccionada } })}>Volver</Button>
+                <div className="btn-success ms-2 mt-auto col d-grid text-decoration-none" >
+                    <Button className="btn btn-primary" style={{backgroundColor:'#0d0d0d', color:'#fff'}}  onClick={() => navigate('../pedidos', { state: { sucursalSeleccionada } })}>Volver</Button>
                 </div>
               </div>
               <br/>

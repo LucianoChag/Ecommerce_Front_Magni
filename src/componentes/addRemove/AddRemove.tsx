@@ -43,13 +43,13 @@ function AddRemove(args: AddRemoveProps) {
                 : (
                 args.small
                     ?   <div className="row me-1 text-white bg-success rounded btn-add-single">
-                        <a className="btn btn-add btn-add-big btn-success" onClick={() => addCart(args.articulo)}>
+                        <a className="btn btn-add btn-add-big btn-success"  style={{color: '#fff', backgroundColor: '#a6c732'}}onClick={() => addCart(args.articulo)}>
                         +
                         </a>
                         </div>
 
                     :   <div className="row d-inline-flex text-white bg-success rounded">
-                        <a className="btn btn-add btn-add-big btn-success" onClick={() => addCart(args.articulo)}>
+                        <a className="btn btn-add btn-add-big btn-success" style={{color: '#fff', backgroundColor: '#a6c732'}} onClick={() => addCart(args.articulo)}>
                         Agregar al carrito
                         </a>
                         </div>

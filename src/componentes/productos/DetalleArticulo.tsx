@@ -78,7 +78,7 @@ const DetalleArticulo = ({ articulo, onClose }: DetalleArticuloProps) => {
                 </div>
                 <div className="mt-4 mb-4 d-flex justify-content-between">
                     {articulo ? <AddRemove articulo={articulo} /> : null}
-                    <Button className="mt-auto" onPress={onClose}>Cerrar</Button>
+                    <Button className="mt-auto" style={{color: '#fff', backgroundColor: '#0D0D0D'}} onPress={onClose}>Cerrar</Button>
                 </div>
               </div>
             </div>

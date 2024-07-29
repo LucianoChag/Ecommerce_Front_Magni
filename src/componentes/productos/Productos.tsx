@@ -77,7 +77,7 @@ const Productos = () => {
             <a href={"#categoria-" + categoria.id} className='text-decoration-none w-100'>
               <Card className={`w-100 mt-2 bg-custom-categories`}>
                 <CardHeader className={`justify-content-center`}>
-                  <h4 className="text-nowrap text-center">{categoria.denominacion}</h4>
+                  <h4 className="text-nowrap text-center" style={{color: '#fff'}}>{categoria.denominacion}</h4>
                 </CardHeader>
               </Card>
             </a>
@@ -87,7 +87,7 @@ const Productos = () => {
           <a href={"#categoria-promociones"} className='text-decoration-none w-100'>
             <Card className='w-100 mt-2 bg-custom-categories'>
               <CardHeader className='justify-content-center'>
-                <h4 className={'text-nowrap text-center'}>Promociones</h4>
+                <h4 className={'text-nowrap text-center'} style={{color: '#fff'}}>Promociones</h4>
               </CardHeader>
             </Card>
           </a>
@@ -97,7 +97,7 @@ const Productos = () => {
       {categorias.map(categoria => (
         <Card id={"categoria-" + categoria.id} className={`d-flex categoria-card selected m-0  mt-2`} key={categoria.id} >
           <CardHeader>
-            <h4>{categoria.denominacion}</h4>
+            <h4 style={{color: '#fff'}}>{categoria.denominacion}</h4>
           </CardHeader>
           <CardBody className='d-flex flex-row flex-wrap justify-content-start' >
             <AnimatePresence>

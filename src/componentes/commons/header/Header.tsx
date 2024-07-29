@@ -38,21 +38,19 @@ const Header = () => {
           className="sm:hidden"
         />
         <NavbarBrand className='align-baseline'>
-          <div className='me-1' style={{ height: "15%", width: "150px" }}>
-            <img src='/buenSabor.png' alt='Logo' />
-          </div>
-          <a className="text-decoration-none" href='#' onClick={() => navigate(`/home`, { state: { sucursalSeleccionada }, relative: 'path' })}>
-            <p className="font-bold text-inherit my-auto">
-              {empresaSeleccionada?.nombre.toUpperCase()}
-            </p>
-          </a>
+        <div className='me-1' style={{ height: "15%", width: "150px" }}>
+  <a href="/">
+    <img src='/buenSabor.png' alt='Logo' />
+  </a>
+</div>
+          
         </NavbarBrand>
       </NavbarContent>
       {sucursalSeleccionada &&
         <NavbarContent as="div" className="hidden sm:flex gap-4" justify="center">
           <Dropdown>
             <DropdownTrigger>
-              <Button
+              <Button 
                 variant="light"
                 color='primary'
                 className="capitalize w-100"
@@ -60,7 +58,7 @@ const Header = () => {
                 endContent={<ChevronDown fill="currentColor" size={16} />}
                 isDisabled={window.location.pathname === '/checkout'}
               >
-                {sucursalSeleccionada.nombre}, Abierto: {(sucursalSeleccionada.horarios.find(horario => horario.diaSemana === ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'][new Date().getDay()]) ?? { horarioDetalles: [] }).horarioDetalles
+                {sucursalSeleccionada.nombre}, Abierto de : {(sucursalSeleccionada.horarios.find(horario => horario.diaSemana === ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'][new Date().getDay()]) ?? { horarioDetalles: [] }).horarioDetalles
                   .sort((a, b) => new Date('2000-01-01T' + a.horaInicio).getTime() - new Date('2000-01-01T' + b.horaInicio).getTime())
                   .map(hd => `(${hd.horaInicio.toString().slice(0, -3)} a ${hd.horaFin.toString().slice(0, -3)})`).join(' y ')}
               </Button>

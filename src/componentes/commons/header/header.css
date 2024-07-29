@@ -6,11 +6,11 @@
 
 .sin-link.selected {
   background-color: rgba(91, 190, 192, 0.363); /* Adaptado a la nueva paleta de colores (5bbec0) */
-  color: rgb(24, 24, 119) !important;
+  color: rgb(24, 24, 119) ;
 }
 
 .sin-link.selected > div > .text-tiny, .sin-link.selected > div > .text-tiny:hover {
-  color: rgba(24, 24, 119, 0.8) !important;
+  color: rgba(24, 24, 119, 0.8) ;
 }
 
 /* Nuevos estilos */
@@ -45,7 +45,7 @@
 
 /* Estilo para botón de iniciar sesión */
 .login-button {
-  color: #ffffff !important;
+  
   background-color: transparent !important;
   border: none !important;
 }

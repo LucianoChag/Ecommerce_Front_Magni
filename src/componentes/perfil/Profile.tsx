@@ -163,16 +163,7 @@ const Profile = ({ editar = false }) => {
                               className="my-2"
                               fullWidth
                             />
-                            <Input
-                              label="Contraseña"
-                              name="contraseña"
-                              isRequired
-                              type="password"
-                              value="************"
-                              disabled
-                              className="my-2"
-                              fullWidth
-                            />
+                            
                           </>
                         ) : (
                           <>
@@ -192,10 +183,7 @@ const Profile = ({ editar = false }) => {
                               <h5 className="fw-medium me-3">CUIL:</h5>
                               <h5 className="fw-normal overflow-ellipsis">{clienteNuevo.cuil}</h5>
                             </div>
-                            <div className="d-flex my-2">
-                              <h5 className="fw-medium me-3">Contraseña:</h5>
-                              <h5 className="fw-normal overflow-ellipsis">************</h5>
-                            </div>
+                            
                           </>
                         )}
                       </div>
@@ -250,7 +238,9 @@ const Profile = ({ editar = false }) => {
 
               <div className="d-flex justify-content-between">
                 <Link to={'../'} className="col-3">
-                  <Button disabled={isEditing} variant="solid" color="secondary" fullWidth>Volver</Button>
+                  <Button
+                  style={{backgroundColor:'#0d0d0d', color:'#fff'}} 
+                  disabled={isEditing} variant="solid" fullWidth>Volver</Button>
                 </Link>
                 {isEditing ? (
                   <>
@@ -259,7 +249,7 @@ const Profile = ({ editar = false }) => {
                     </Button>
                     <Popover showArrow offset={10} placement="top" backdrop={"opaque"} isOpen={error !== ""} color="danger"  onClose={() => setError("")}>
                       <PopoverTrigger>
-                      <Button variant="solid" color="success" className="col-3" onClick={handleSubmit}>
+                      <Button variant="solid" style={{backgroundColor:'#a6c732', color:'#fff'}}  className="col-3" onClick={handleSubmit}>
                         Guardar
                       </Button>
                       </PopoverTrigger>
@@ -267,7 +257,8 @@ const Profile = ({ editar = false }) => {
                     </Popover>
                   </>
                 ) : (
-                  <Button variant="solid" color="success" className="col-6 col-md-4 col-lg-3" onClick={() => setIsEditing(true)}>
+                  <Button 
+                  style={{backgroundColor:'#a6c732', color:'#fff'}} variant="solid"  className="col-6 col-md-4 col-lg-3" onClick={() => setIsEditing(true)}>
                     Modificar Datos
                   </Button>
                 )}

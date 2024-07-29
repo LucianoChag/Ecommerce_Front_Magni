@@ -5,7 +5,7 @@ const SignUpButton = () => {
   const { loginWithRedirect } = useAuth0();
 
   return (
-    <Button as={Link} className="signup-button" onClick={() =>
+    <Button as={Link} className="signup-button" style={{color: '#fff', backgroundColor: '#5bbec0'}}onClick={() =>
       loginWithRedirect({
         appState: {
           returnTo: '/registrar',

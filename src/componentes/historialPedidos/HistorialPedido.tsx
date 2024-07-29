@@ -57,14 +57,14 @@ function HistorialPedidos() {
                             <input type="date" className='form-control' value={fechaHasta} onChange={(e) => setFechaHasta(e.target.value)} />
                         </label>
                         <div className='ms-auto mt-auto'>
-                            <a className="btn btn-lg btn-success" onClick={handleDescargarExcel}>Exportar a Excel</a>
+                            <a className="btn btn-lg btn-secondary"  onClick={handleDescargarExcel}>Exportar a Excel</a>
                         </div>
                     </div>
                     
                     <div className='contenido'>
-                        <table className='table mx-auto width-80 text-center'>
+                        <table  className='table mx-auto width-80 text-center'>
                             <thead>
-                            <tr className='table-dark'>
+                            <tr  className='table-dark'>
                                 <th scope="col">
                                     Pedido N°
                                 </th>
@@ -105,7 +105,7 @@ function HistorialPedidos() {
                                     </td>
                                     <td>
                                         <div style={{ marginBottom: 10 }} className="ms-2 mt-auto col d-grid text-decoration-none">
-                                            <Button className="btn btn-primary" onClick={() => navigate(`../pedidodetalle/${pedido.id}`, { state: { sucursalSeleccionada } })}>Ver detalles</Button>
+                                            <Button className="btn btn-primary" style={{backgroundColor:'#0d0d0d', color:'#fff'}} onClick={() => navigate(`../pedidodetalle/${pedido.id}`, { state: { sucursalSeleccionada } })}>Ver detalles</Button>
                                         </div>
                                     </td>
                                     
