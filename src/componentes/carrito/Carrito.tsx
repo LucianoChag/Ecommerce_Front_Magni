@@ -69,11 +69,11 @@ const Carrito = () => {
     (<div className='carrito'>
       {cart.length > 0 && (
         <Card>
-          <CardHeader className='bg-light d-flex justify-content-between align-items-center bg-custom-carrito'>
+          <CardHeader className='bg-light d-flex justify-content-between align-items-center bg-custom-carrito' style={{ color:'#fff'}}>
             <div>
               Carrito de compras
             </div>
-            <Button color="secondary" onClick={() => setIsOpen(!isOpen)}>
+            <Button style={{backgroundColor:'#0d0d0d', color:'#fff'}} onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? 'Minimizar Carrito' : 'Abrir Carrito'}
             </Button>
           </CardHeader>
@@ -98,7 +98,7 @@ const Carrito = () => {
                   <Button color="danger" onClick={clearCart} className='me-2'>
                     Limpiar todo
                   </Button>
-                  <Button color="success" onClick={save}>
+                  <Button style={{backgroundColor:'#a6c732', color:'#fff'}} onClick={save}>
                     Continuar
                   </Button>
                 </CardFooter>

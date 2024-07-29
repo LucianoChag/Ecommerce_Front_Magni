@@ -58,7 +58,7 @@ function DomicilioSeleccionado({ domicilios, domicilio, handleChangeDomicilios, 
 
             <hr className='my-2' />
             <div className="row mx-0">
-                <button type='button' className="btn btn-secondary" onClick={() => handleShow(domicilio)}>Modificar dirección</button>
+                <button type='button' className="btn btn-secondary" style={{backgroundColor:'#0d0d0d', color:'#fff'}} onClick={() => handleShow(domicilio)}>Modificar dirección</button>
             </div>
         </>
     );

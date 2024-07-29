@@ -63,7 +63,7 @@ function PedidoMpButton ({pedido} : {pedido:Pedido}) {
     return (
         <div className='mb-3'>
             <div className='row mx-0 justify-content-center' hidden={enviando || idPreference !== ''}>
-                <Button className='btn' color='primary' onClick={save} disabled={enviando}>Generar el pedido</Button>
+                <Button className='btn' style={{backgroundColor:'#a6c732', color:'#fff'}} onClick={save} disabled={enviando}>Generar el pedido</Button>
             </div>
             {enviando 
                 ? <Spinner color='success' />

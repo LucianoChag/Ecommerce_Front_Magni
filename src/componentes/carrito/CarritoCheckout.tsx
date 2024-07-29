@@ -153,7 +153,7 @@ function CarritoCheckout() {
                     </div>
                 </div>
                 <div className="me-auto">
-                    <Button onClick={() => navigate('../home', { state: { pedido, sucursalSeleccionada } })}>Seguir comprando</Button>
+                    <Button style={{backgroundColor:'#5bbec0', color:'#fff'}} onClick={() => navigate('../home', { state: { pedido, sucursalSeleccionada } })}>Seguir comprando</Button>
                 </div>
             </div>)
         :   (<LoaderPage />)}
