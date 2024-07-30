@@ -1,6 +1,6 @@
 import Header from '../componentes/commons/header/Header';
 import Productos from '../componentes/productos/Productos';
-import { CCarousel, CCarouselItem } from '@coreui/react';
+
 import '@coreui/coreui/dist/css/coreui.min.css'
 import { useEffect, useState } from 'react';
 import Promocion from '../entidades/Promocion';
@@ -32,17 +32,7 @@ const Home = () => {
       <Header />
       {sucursalSeleccionada 
         ? <div className='container'>
-            {(promociones.length > 0) 
-            && <CCarousel controls indicators>
-                {promociones.map((promocion, index) => (
-                  <CCarouselItem key={index} className='dark'>
-                    <div className='d-flex justify-content-center carousel-lg'>
-                    <img src={promocion.imagenes[0].url} alt={promocion.denominacion} />
-                    </div>
-                  </CCarouselItem>
-                ))}
-              </CCarousel>
-            }
+            
             <Productos />
           </div>
         : <LoaderPage />

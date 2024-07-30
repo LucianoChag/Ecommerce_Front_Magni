@@ -89,7 +89,7 @@ background-color: rgba(127, 127, 127, 0.2);
 }
 ::-webkit-scrollbar-thumb:vertical {
 height: 8px;
-background-color: rgba(113, 73, 255, 0.4)
+background-color: rgba(0, 180, 252, 0.4)
 }
 
 .cm-scroller::-webkit-scrollbar {
